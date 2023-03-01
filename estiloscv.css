@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+body
+{
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner 
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: cornsilk;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner .lado_izquierdo
+{
+    position: relative;
+    background-color: dimgray ;
+    padding: 40px;
+}
+
+.perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .img_cv
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 500%;
+    border: 3px solid darksalmon;
+    overflow: hidden;
+}
+
+.perfil .img_cv img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil h2
+{
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.perfil p
+{
+    color: whitesmoke;
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center justify;
+    line-height: 1.2em;
+}
+
+.contacto
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contacto h2
+{   
+    padding-top: 0px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.contacto span
+{
+    color: whitesmoke;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center justify;
+    line-height: 1.2em;
+}
+
+.contacto icon
+{
+    color: whitesmoke;
+}
+
+.idioma
+{
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.idioma h2
+{
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.idioma span
+{
+
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+.idioma .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: whitesmoke;
+    display: block;
+    margin-top: 5px;
+
+
+}
+
+.idioma .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: darksalmon;
+}
+
+.conteiner .lado_derecho
+{
+    position: relative;
+    background-color: cornsilk ;
+    padding: 40px;
+}
+
+.informacion h1
+{
+    color: dimgray;
+    text-transform: uppercase
+}
+
+.informacion h1 span
+{
+    color: darksalmon;
+}
+
+.estudios 
+{
+    color: dimgray;
+}
+
+.estudios ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.estudios .material-symbols-outlined
+{
+    display: flex;
+}
+
+.estudios h2
+{
+    display: flex;
+    margin-left: 10px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.estudios h3
+{
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+.estudios p
+{
+    margin-top: 3px;
+    margin-left: 35px;
+    font-weight: 400;
+}
+
+.experiencia
+{
+    margin-top: 15px;
+    color: dimgray;
+}
+
+.experiencia ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.experiencia .material-icons-outlined
+{
+    display: flex;
+}
+
+.experiencia h2
+{
+    display: flex;
+    margin-left: 10px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.experiencia .lugares
+{
+    margin-top: 3px;
+    margin-left: 35px;
+}
+
+.experiencia p
+{
+    margin-top: 3px;
+    font-weight: 400;
+}
+
+.experiencia .lugares
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.experiencia .lugares .tiempo
+{
+    min-width: 130px; 
+}
+
+.skills .lugares
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .lugares h4
+{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.skills .lugares .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: whitesmoke;
+}
+
+.skills .lugares .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #e9967a;
+}
